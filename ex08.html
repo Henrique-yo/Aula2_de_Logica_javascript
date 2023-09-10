@@ -1,0 +1,28 @@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex08</title>
+</head>
+<body>
+    <h3>
+        Escreva um programa para ler o número de gols marcados pelo Corinthians e o número de gols marcados pelo Palmeiras em um final da Libertadores. Exibir o nome do vencedor. Caso não haja vencedor deverá ser exibida a palavra EMPATE.
+    </h3>
+
+    <script>
+
+        let Corinthians = parseFloat(prompt("Quantos gols o Corinthians fez?"));
+        let Palmeiras = parseFloat(prompt("Quantos gols o Palmeiras fez?"));
+
+        document.write("<h3> O jogo terminou: <br><br> Corinthians "+ Corinthians +"<br> Palmeiras "+ Palmeiras + "</h3>")
+
+        if(Corinthians == Palmeiras){
+        document.write("<h3> EMPATE </h3>")
+        }else if(Corinthians > Palmeiras){
+        document.write("<h3> CORINTHIANS CAMPEÃO </h3>")
+        }else{
+        document.write("<h3> PALMEIRAS CAMPEÃO </h3>")
+        }
+
+        
+    </script>
+</body>
+</html>

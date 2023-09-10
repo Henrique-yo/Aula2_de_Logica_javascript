@@ -1,0 +1,38 @@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10</title>
+</head>
+<body>
+    <h3>
+        Escreva um programa para ler o número de lados de um polígono regular e a medida do lado (em cm).
+        Calcular e exibir o seguinte: Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor do seu perímetro. Se o número de lados for igual a 4 escrever QUADRADO e o valor da sua área. Se o número de lados for igual a 5 escrever PENTÁGONO. Observação: Considere que o usuário só informará os valores 3, 4 ou 5. Caso o número de lados seja inferior a 3 escrever NÃO É UM POLÍGONO. Caso o número de lados seja superior a 5 escrever POLÍGONO NÃO IDENTIFICADO.
+    </h3>
+
+    <script>
+
+        let lados = parseInt(prompt("Digite quantos lados tem o polígono"));
+        let medida = parseInt(prompt("Qual a medida do lado (em cm)"));
+
+        let perimetro = parseInt(medida * lados);
+        let area = parseInt(lados * lados);
+        // let area = parseInt(lados ^ 2);
+
+        if(lados == 3){
+            document.write("<h3> Esse é um TRIÂNGULO </h3>");
+            document.write("<h3> O perimetro é: "+ perimetro +"cm  </h3>");
+        }else if(lados == 4){
+            document.write("<h3> Esse é um QUADRADO </h3>");
+            document.write("<h3> A area é: "+ area +"cm² </h3>");
+        }else if(lados == 5){
+            document.write("<h3> Esse é um PENTÁGONO </h3>");
+        }else{ if(lados > 5){
+            document.write("<h3> POLÍGONO NÃO IDENTIFICADO");
+        }else{
+            document.write("<h3> NÃO É UM POLÍGONO");
+        }
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07</title>
+</head>
+<body>
+    <h3>
+        As maçãs custam R$ 3,50 cada se forem compradas menos do que uma dúzia, e R$ 2,50 se forem compradas pelo menos doze. Escreva um programa que leia o número de maçãs compradas (considere que o usuário informará a quantidade),  calcule e escreva o valor total da compra.
+    </h3>
+
+    <script>
+
+        let macas 
+        let resultado
+
+        let quant_macas = parseFloat(prompt("Quantas maçãs você quer?"));
+        
+        if(quant_macas < 12){
+            macas = 3.50;
+        }else{
+            macas = 2.50;
+        }
+
+        resultado = parseFloat( quant_macas * macas)
+
+        document.write("<h3> Você comprou "+ quant_macas +" maçãs"+ " <br> O valor deu: R$ " + resultado + "</h3>")
+
+    </script>
+</body>
+</html>
